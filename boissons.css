@@ -432,22 +432,6 @@ a {
 }
 
 
-/* Afficher les boutons sur petits écrans */
-@media (max-width: 768px) {
-    .carousel-btn {
-        display: block;
-    }
-}
-
-
-/* Afficher les boutons sur petits écrans */
-@media (max-width: 768px) {
-    .carousel-btn {
-        display: block;
-    }
-}
-
-
 /* Support mobile */
 @media (max-width: 768px) {
     .carousel-item {
