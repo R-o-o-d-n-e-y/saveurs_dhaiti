@@ -476,51 +476,7 @@ a {
     }
 
 
-    /* Écran de Samsung Galaxy (grands smartphones) */
-@media screen and (max-width: 1440px) {
-    .container {
-        width: 95%;
-        padding: 30px;
-    }
-
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    .container button {
-        padding: 10px 35px;
-        font-size: 13px;
-    }
-}
-
-/* Pour Galaxy A54 ou similaires */
-@media screen and (max-width: 1080px) {
-    .container {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .container input {
-        font-size: 12px;
-    }
-}
-
-/* Pour les écrans pliés (Foldables comme Z Fold) */
-@media screen and (max-width: 1812px) {
-    .container {
-        flex-direction: column;
-    }
-
-    h1 {
-        font-size: 1.4rem;
-    }
-
-    .container button {
-        width: 100%;
-    }
-}
-}
-
+    
 
 /* Responsive */
 @media (max-width: 768px) {
