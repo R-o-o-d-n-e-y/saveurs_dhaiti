@@ -423,36 +423,59 @@ a {
 }
 
 
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        min-height: 600px;
+        width: 90%; /* Évite la largeur trop rigide */
+        padding: 20px;
+    }
 
-/* Afficher les boutons sur petits écrans */
-@media (max-width: 768px) {
-    .carousel-btn {
-        display: block;
+    .sign-in,
+    .sign-up {
+        width: 100%;
+        position: relative;
+        transform: none;
+        left: auto;
+    }
+
+    .form-container {
+        position: relative;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .toggle-container {
+        display: none; /* Désactive la partie visuelle pour plus de clarté sur mobile */
+    }
+
+    .container form {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container p {
+        font-size: 14px;
+    }
+
+    .container input {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .container button {
+        padding: 10px 30px;
+        font-size: 12px;
+    }
+
+    .toggle {
+        display: none;
     }
 }
 
-
-/* Support mobile */
-@media (max-width: 768px) {
-    .carousel-item {
-        flex: 0 0 80%;
-    }
-}
-
-@media (max-width: 480px) {
-    .carousel-item {
-        flex: 0 0 100%;
-    }
-}
-
-/* Suggestions grid */
-@media (max-width: 576px) {
-    .suggestions-grid,
-    .items-grid {
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-}
 
 /* Responsive */
 @media (max-width: 768px) {
