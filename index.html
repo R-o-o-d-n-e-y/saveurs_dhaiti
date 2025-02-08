@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Cuisine Haïtienne</title>
+	<link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+<!-- Menu de navigation -->
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html" aria-label="Page d'accueil">
+                <span class="red-text">Saveurs</span> <span class="blue-text">d'Haïti</span>
+            </a>
+        </div>
+        
+        <nav class="nav-menu" aria-label="Menu principal">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="formulaire.html">Inscription</a></li> 
+                <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a></li>
+                
+            </ul>
+        </nav>
+        <div class="buttons">
+            <button class="action-button" id="openMenuButton" aria-label="Ouvrir le menu">☰</button>
+        </div>
+    </div>
+    <nav id="sideMenu" class="side-menu" aria-hidden="true">
+        <span class="close-btn" id="closeMenu" aria-label="Fermer le menu">&times;</span>
+        <div class="menu-content">
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+            <a href="formulaire.html">Inscription</a>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a>
+        </div>
+    </nav>
+</header>
+
+
+
+    <main class="hero">
+        <img src="images/hero-image.jpg" alt="Image principale" class="hero-image" loading="lazy">
+        <div class="hero-content">
+            <h1 class="slide-in-left">Bienvenue sur Saveurs d'Haïti</h1>
+            <p class="slide-in-right">Découvrez les saveurs uniques de la cuisine haïtienne.</p>
+    
+            <div class="hero-buttons">
+                <a href="recettes.html" class="hero-button button-animation">Découvrir les recettes</a>
+                <a href="formulaire.html" class="hero-button button-animation">Inscription</a>
+            </div>
+        </div>
+    </main>
+    
+    <section class="offers-section">
+        <h2 class="offers-title">Découvrez ce que nous offrons</h2>
+        <ul class="offers-list">
+            <li>
+                <a href="petit-dejeuner.html">
+                    <h3>Petit Déjeuner</h3>
+                    <p>Des repas équilibrés pour bien commencer la journée.</p>
+                </a>
+            </li>
+            <li>
+                <a href="Plats-du-jour.html">
+                    <h3>Plats du jour</h3>
+                    <p>Des plats savoureux pour tous les goûts.</p>
+                </a>
+            </li>
+            <li>
+                <a href="street-food.html">
+                    <h3>Street food</h3>
+                    <p>Des encas rapides et gourmands.</p>
+                </a>
+            </li>
+            <li>
+                <a href="desserts-sucre.html">
+                    <h3>Desserts et Sucreries</h3>
+                    <p>Des douceurs sucrées pour finir en beauté.</p>
+                </a>
+            </li>
+            <li>
+                <a href="boissons.html">
+                    <h3>Boissons</h3>
+                    <p>Des rafraîchissements pour tous les moments.</p>
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Saveurs d'Haïti - Tous droits réservés</p>
+    </footer>
+    
+
+    <script>
+        window.onload = () => {
+            const heroText = document.querySelector('.hero-content');
+            heroText.classList.add('visible');
+        };
+
+        const openMenuButton = document.getElementById('openMenuButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const closeMenuButton = document.getElementById('closeMenu');
+
+        openMenuButton.onclick = () => {
+            sideMenu.style.height = '100vh';
+            sideMenu.setAttribute('aria-hidden', 'false');
+        };
+
+        closeMenuButton.onclick = () => {
+            sideMenu.style.height = '0';
+            sideMenu.setAttribute('aria-hidden', 'true');
+        };
+
+      
+    </script>
+</body>
+
+</html>

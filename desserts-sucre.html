@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desserts et Sucreries</title>
+    <link rel="stylesheet" href="desserts-sucre.css">
+</head>
+<body>
+     <!-- Menu de navigation -->
+     <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html" aria-label="Page d'accueil">
+                    <span class="red-text">Saveurs</span> <span class="blue-text">d'Haïti</span>
+                </a>
+            </div>
+            <nav class="nav-menu" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="formulaire.html">Inscription</a></li> 
+                        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a></li> 
+                </ul>
+            </nav>
+            <div class="buttons">
+                <button class="action-button" id="openMenuButton" aria-label="Ouvrir le menu">☰</button>
+            </div>
+        </div>
+        <nav id="sideMenu" class="side-menu" aria-hidden="true">
+            <span class="close-btn" id="closeMenu" aria-label="Fermer le menu">&times;</span>
+            <div class="menu-content">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="formulaire.html">Inscription</a>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a>
+            </div>
+        </nav>
+    </header>
+
+   <!-- Bannière -->
+<section class="banner">
+    <div class="banner-content">
+        <h1>Desserts et Sucreries Haïtiennes</h1>
+        <p>Découvrez notre sélection de desserts et sucreries haïtiennes, faits maison pour ravir vos papilles à chaque bouchée.</p>
+    </div>
+</section>
+
+    <!-- Section des Items : Desserts et Sucreries -->
+<section class="items-section">
+    <h2>Nos Desserts et Sucreries</h2>
+    <div class="items-grid">
+        <!-- Carte 1 : Dous Makòs -->
+        <div class="item-card">
+            <img src="images/DousMakos.jpg" alt="Dous Makòs" class="item-image">
+            <div class="item-info">
+                <h3>Dous Makòs</h3>
+                <p>Un délice de noix de cajou sucrée, parfaite pour grignoter avec une tasse de café ou de thé.</p>
+                <button><a href="recettes.html#dous-makòs">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 2 : Pain Patate -->
+        <div class="item-card">
+            <img src="images/PainPatate.jpg" alt="Pain Patate" class="item-image">
+            <div class="item-info">
+                <h3>Pain Patate</h3>
+                <p>Un délicieux gâteau à base de patates douces, sucré et parfumé avec des épices.</p>
+                <button><a href="recettes.html#pain-patate">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 3 : Bonbon Sirop -->
+        <div class="item-card">
+            <img src="images/BonbonSirop.jpg" alt="Bonbon Sirop" class="item-image">
+            <div class="item-info">
+                <h3>Bonbon Sirop</h3>
+                <p>De petites boules sucrées trempées dans un sirop savoureux, parfaites pour les amateurs de douceurs.</p>
+                <button><a href="recettes.html#bonbon-sirop">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 4 : Konparèt -->
+        <div class="item-card">
+            <img src="images/Konparet.jpg" alt="Konparèt" class="item-image">
+            <div class="item-info">
+                <h3>Konparèt</h3>
+                <p>Un dessert à base de noix de coco, sucré et légèrement épicé, parfait pour les petites faims.</p>
+                <button><a href="recettes.html#konparet">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 5 : Tablèt Kokoye -->
+        <div class="item-card">
+            <img src="images/TabletKokoye.jpg" alt="Tablèt Kokoye" class="item-image">
+            <div class="item-info">
+                <h3>Tablèt Kokoye</h3>
+                <p>Une tablette sucrée à base de noix de coco râpée, parfaite pour un goûter rapide et savoureux.</p>
+                <button><a href="recettes.html#tablèt-cocoye">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 6 : Tablèt Pistach -->
+        <div class="item-card">
+            <img src="images/TabletPistach.jpg" alt="Tablèt Pistach" class="item-image">
+            <div class="item-info">
+                <h3>Tablèt Pistach</h3>
+                <p>Des bonbons sucrés à base de pistaches concassées et de sucre, offrant une saveur croquante et délicieuse.</p>
+                <button><a href="recettes.html#tablèt-pistach">Voir la recette</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Section Histoire des Desserts et Sucreries -->
+<section class="history-section">
+    <h2>Histoire de nos Desserts et Sucreries</h2>
+    <p>Les desserts et sucreries haïtiens incarnent la douceur de vivre et la richesse des traditions culinaires locales. Chaque recette, souvent transmise de génération en génération, évoque des souvenirs d’enfance, des fêtes joyeuses et des moments de partage en famille. Découvrez l'origine et les secrets de ces délices emblématiques :</p>
+
+    <ul>
+        <li>
+            <strong>Dous Makòs :</strong>  
+            Originaire de la ville de Petit-Goâve, cette confiserie colorée est une véritable fierté nationale. À base de lait concentré, de sucre et parfois de noix de cajou, le dous makòs se distingue par ses couches colorées qui attirent l'œil. Sa création remonte à l'époque coloniale et il reste un symbole incontournable de la gourmandise haïtienne.
+        </li>
+
+        <li>
+            <strong>Pain Patate :</strong>  
+            Ce gâteau rustique à base de patate douce, de lait de coco, de cannelle et de muscade est souvent servi lors des fêtes familiales. Héritage des traditions africaines, il symbolise la créativité culinaire haïtienne avec des ingrédients simples mais riches en saveurs.
+        </li>
+
+        <li>
+            <strong>Bonbon Sirop :</strong>  
+            Ce bonbon artisanal, préparé avec un sirop épais à base de sucre de canne, est populaire durant les périodes festives, notamment le carnaval. Sa texture dense et sa saveur caramélisée en font un délice incontournable pour les amateurs de douceurs traditionnelles.
+        </li>
+
+        <li>
+            <strong>Konparèt :</strong>  
+            Spécialité de Jérémie, souvent surnommée « la Cité des Poètes », le konparèt est un gâteau dense à base de farine, de noix de coco râpée et de gingembre. Il est apprécié pour sa texture moelleuse et son parfum envoûtant.
+        </li>
+
+        <li>
+            <strong>Tablèt Kokoye :</strong>  
+            Cette sucrerie faite de noix de coco râpée et de sucre caramélisé est une gourmandise traditionnelle préparée à la maison. Elle est souvent vendue dans les marchés et offerte comme cadeau lors des célébrations.
+        </li>
+
+        <li>
+            <strong>Tablèt Pistach :</strong>  
+            Variante à base de pistaches locales, cette friandise croquante et sucrée est adorée pour son goût prononcé de noix. Elle est préparée avec du sucre fondu qui enrobe les pistaches pour créer une texture délicieusement croustillante.
+        </li>
+    </ul>
+
+    <h3>Pourquoi Choisir Nos Desserts ?</h3>
+    <p>Nos desserts et sucreries sont préparés avec des ingrédients naturels et un savoir-faire artisanal qui respecte les traditions haïtiennes. Chaque bouchée vous invite à voyager à travers les saveurs authentiques de notre île, pour une expérience gourmande inoubliable.</p>
+</section>
+
+
+
+    <!-- Scripts -->
+    <script>
+        // Ouvrir et fermer le menu latéral
+        document.getElementById("openMenuButton").addEventListener("click", function() {
+            document.getElementById("sideMenu").style.height = "100%";
+            document.getElementById("sideMenu").setAttribute("aria-hidden", "false");
+        });
+
+        document.getElementById("closeMenu").addEventListener("click", function() {
+            document.getElementById("sideMenu").style.height = "0";
+            document.getElementById("sideMenu").setAttribute("aria-hidden", "true");
+        });
+    </script>
+</body>
+</html>

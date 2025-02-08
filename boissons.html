@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boissons</title>
+    <link rel="stylesheet" href="boissons.css">
+</head>
+<body>
+        <!-- Menu de navigation -->
+        <header>
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html" aria-label="Page d'accueil">
+                        <span class="red-text">Saveurs</span> <span class="blue-text">d'Haïti</span>
+                    </a>
+                </div>
+                <nav class="nav-menu" aria-label="Menu principal">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="formulaire.html">Inscription</a></li> 
+                        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a></li> 
+                    </ul>
+                </nav>
+                <div class="buttons">
+                    <button class="action-button" id="openMenuButton" aria-label="Ouvrir le menu">☰</button>
+                </div>
+            </div>
+            <nav id="sideMenu" class="side-menu" aria-hidden="true">
+                <span class="close-btn" id="closeMenu" aria-label="Fermer le menu">&times;</span>
+                <div class="menu-content">
+                    <a href="index.html">Accueil</a>
+                    <a href="about.html">À propos</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="formulaire.html">Inscription</a>
+                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a>
+                </div>
+            </nav>
+        </header>
+
+<!-- Bannière -->
+<section class="banner">
+    <div class="banner-content">
+        <h1>Boissons Haïtiennes</h1>
+        <p>Découvrez nos spécialités de boissons haïtiennes, faites maison, pour accompagner vos repas ou simplement pour savourer un moment de détente.</p>
+    </div>
+</section>
+
+<!-- Section des Items : Nos Boissons Haïtiennes -->
+<section class="items-section">
+    <h2>Nos Boissons Haïtiennes</h2>
+    <div class="items-grid">
+        <!-- Carte 1 : Jus Cerise -->
+        <div class="item-card">
+            <img src="images/JusCerise.jpg" alt="Jus Cerise" class="item-image">
+            <div class="item-info">
+                <h3>Jus Cerise</h3>
+                <p>Boisson rafraîchissante à base de cerises, sucrée et délicieuse.</p>
+                <button><a href="recettes.html#jus-cerise">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 2 : Jus Grenadia -->
+        <div class="item-card">
+            <img src="images/JusGrenadia.jpg" alt="Jus Grenadia" class="item-image">
+            <div class="item-info">
+                <h3>Jus Grenadia</h3>
+                <p>Jus sucré et acidulé préparé à partir de la grenadille, très populaire en Haïti.</p>
+                <button><a href="recettes.html#jus-grenadia">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 3 : Jus Citron -->
+        <div class="item-card">
+            <img src="images/JusCitron.jpg" alt="Jus Citron" class="item-image">
+            <div class="item-info">
+                <h3>Jus Citron</h3>
+                <p>Jus frais à base de citrons, un incontournable pour se rafraîchir.</p>
+                <button><a href="recettes.html#jus-citron">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 4 : Jus Tamarin -->
+        <div class="item-card">
+            <img src="images/JusTamarin.jpg" alt="Jus Tamarin" class="item-image">
+            <div class="item-info">
+                <h3>Jus Tamarin</h3>
+                <p>Un jus savoureux et légèrement acidulé fait à partir du tamarin.</p>
+                <button><a href="recettes.html#jus-tamarin">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 5 : Jus Corossol -->
+        <div class="item-card">
+            <img src="images/JusCorossol.jpg" alt="Jus Corossol" class="item-image">
+            <div class="item-info">
+                <h3>Jus Corossol</h3>
+                <p>Boisson sucrée et crémeuse, réalisée avec le fruit du corossol.</p>
+                <button><a href="recettes.html#jus-corossol">Voir la recette</a></button>
+        </div>
+        <!-- Carte 6 : Crémasse -->
+        <div class="item-card">
+            <img src="images/Cremasse.jpg" alt="Crémasse" class="item-image">
+            <div class="item-info">
+                <h3>Crémasse</h3>
+                <p>Boisson crémeuse à base de lait de coco, alcool et épices, un classique des fêtes.</p>
+                <button><a href="recettes.html#cremasse">Voir la recette</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h2 class="carousel-title">Découvrez d'autres Boissons Alcoolisées Haïtiennes</h2>
+<div class="carousel">
+    <div class="carousel-track">
+        <div class="carousel-item">
+            <img src="images/RhumBarbancourt.jpg" alt="Rhum Barbancourt">
+            <div class="carousel-text">Un rhum raffiné et emblématique, symbole du savoir-faire haïtien.</div>
+            <div class="carousel-name">Rhum Barbancourt</div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/CocktailsHaitiens.jpg" alt="Cocktails Haïtiens">
+            <div class="carousel-text">Des mélanges exotiques aux saveurs uniques d'Haïti.</div>
+            <div class="carousel-name">Cocktails Haïtiens</div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/Prestige.jpg" alt="Bière Prestige">
+            <div class="carousel-text">La bière nationale d'Haïti, appréciée pour son goût équilibré.</div>
+            <div class="carousel-name">Bière Prestige</div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/Kleren.jpg" alt="Kleren">
+            <div class="carousel-text">Un spiritueux artisanal, reflet des traditions haïtiennes.</div>
+            <div class="carousel-name">Kleren</div>
+        </div>
+        <div class="carousel-item">
+            <img src="images/LiqueursHaitiennes.jpg" alt="Liqueurs Haïtiennes">
+            <div class="carousel-text">Des liqueurs locales aux arômes riches et variés.</div>
+            <div class="carousel-name">Liqueurs Haïtiennes</div>
+        </div>
+    </div>
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+</div>
+
+    <button class="carousel-btn prev">&#10094;</button>
+    <button class="carousel-btn next">&#10095;</button>
+</div>
+
+
+
+
+<!-- Section Histoire -->
+<section class="history-section">
+    <h2>Histoire de nos Boissons Haïtiennes</h2>
+    <p>Les boissons haïtiennes sont bien plus que de simples rafraîchissements : elles incarnent l’âme même de la culture culinaire de notre île. Issues de traditions anciennes, elles sont souvent préparées avec des fruits tropicaux frais, des épices locales et un savoir-faire transmis de génération en génération. Chaque gorgée raconte une histoire riche en saveurs.</p>
+
+    <ul>
+        <li>
+            <strong>Jus Grenadia :</strong>  
+            Aussi appelé jus de fruit de la passion, il offre un parfait équilibre entre douceur et acidité. Consommé pour ses propriétés digestives, il est un incontournable des journées ensoleillées.
+        </li>
+
+        <li>
+            <strong>Jus Cerise :</strong>  
+            Préparé avec des cerises tropicales mûres, ce jus sucré et légèrement acidulé est apprécié pour sa richesse en vitamines et son goût vivifiant.
+        </li>
+
+        <li>
+            <strong>Jus Citron :</strong>  
+            Ce jus simple mais puissant est préparé avec des citrons fraîchement pressés. Rafraîchissant et riche en vitamine C, il est un remède naturel contre la déshydratation et la fatigue.
+        </li>
+
+        <li>
+            <strong>Crémasse :</strong>  
+            Cette boisson crémeuse emblématique, à base de lait de coco, de lait concentré, de rhum et d’épices, est traditionnellement consommée lors des fêtes et célébrations. Son goût velouté en fait un véritable délice festif.
+        </li>
+
+        <li>
+            <strong>Jus Corossol :</strong>  
+            Ce jus est préparé avec le corossol, un fruit tropical au goût doux et légèrement acidulé. Riche en antioxydants, il est prisé pour ses propriétés apaisantes et revitalisantes.
+        </li>
+
+        <li>
+            <strong>Jus Tamarin :</strong>  
+            Avec son goût aigre-doux unique, le jus de tamarin est une boisson rafraîchissante très populaire. Apprécié pour ses bienfaits digestifs, il est une véritable invitation à la découverte de saveurs atypiques.
+        </li>
+
+        <li>
+            <strong>Rhum Barbancourt :</strong>  
+            Ce rhum haïtien d'exception, célèbre dans le monde entier, est élaboré avec soin selon des techniques ancestrales. Il peut être consommé pur, en cocktail ou en accompagnement de plats haïtiens.
+        </li>
+
+        <li>
+            <strong>Bière Prestige :</strong>  
+            La bière nationale d’Haïti, légère et rafraîchissante, est appréciée pour sa saveur équilibrée. Elle accompagne parfaitement les plats épicés de la cuisine locale.
+        </li>
+
+        <li>
+            <strong>Kleren :</strong>  
+            Une eau-de-vie traditionnelle à base de canne à sucre, le kleren est une boisson artisanale authentique, souvent consommée lors de rassemblements festifs.
+        </li>
+
+        <li>
+            <strong>Cocktails Haïtiens :</strong>  
+            Des créations uniques comme le “Zombie” ou le “Punch Crémasse”, qui combinent souvent le rhum, des jus tropicaux et des épices locales pour une expérience gustative explosive.
+        </li>
+
+        <li>
+            <strong>Liqueurs Artisanales :</strong>  
+            Des liqueurs faites maison à base de fruits tropicaux, de café ou d’épices, qui offrent une touche sucrée et sophistiquée à la dégustation.
+        </li>
+    </ul>
+
+    <h3>Pourquoi Choisir nos Boissons ?</h3>
+    <p>Nos boissons sont préparées avec des fruits frais, cueillis à maturité, pour offrir une expérience gustative authentique. Les boissons alcoolisées sont sélectionnées pour leur qualité et leur lien avec les traditions haïtiennes. Chaque boisson est une célébration des richesses naturelles de notre île, parfaite pour vous désaltérer et accompagner vos plats avec style et tradition.</p>
+</section>
+
+
+
+    <!-- Scripts -->
+    <script>
+           // Ouvrir et fermer le menu latéral
+           document.getElementById("openMenuButton").addEventListener("click", function() {
+            document.getElementById("sideMenu").style.height = "100%";
+            document.getElementById("sideMenu").setAttribute("aria-hidden", "false");
+        });
+
+        document.getElementById("closeMenu").addEventListener("click", function() {
+            document.getElementById("sideMenu").style.height = "0";
+            document.getElementById("sideMenu").setAttribute("aria-hidden", "true");
+        });
+
+       
+
+        document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+    const prevButton = document.querySelector('.carousel-btn.prev');
+    const nextButton = document.querySelector('.carousel-btn.next');
+    const carouselContainer = document.querySelector('.carousel-container');
+    let currentIndex = 0;
+    let autoScrollInterval;
+
+    // Fonction pour mettre à jour la position du carrousel
+    const updateCarousel = () => {
+        const itemWidth = items[0].getBoundingClientRect().width;
+        track.style.transition = 'transform 0.5s ease-in-out'; 
+        track.style.transform = `translateX(-${currentIndex * itemWidth}px)`; 
+    };
+
+    // Fonction de défilement automatique
+    const startAutoScroll = () => {
+        autoScrollInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % items.length; 
+            updateCarousel();
+        }, 3000); 
+    };
+
+    // Défilement manuel avec les boutons
+    prevButton.addEventListener('click', () => {
+        clearInterval(autoScrollInterval); 
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1; 
+        updateCarousel();
+    });
+
+    nextButton.addEventListener('click', () => {
+        clearInterval(autoScrollInterval); 
+        currentIndex = (currentIndex + 1) % items.length; 
+        updateCarousel();
+    });
+
+    // Mise à jour lors du redimensionnement de la fenêtre
+    window.addEventListener('resize', updateCarousel);
+
+    // Détection de la taille de l'écran pour activer le défilement automatique ou les boutons manuels
+    const checkScreenSize = () => {
+        if (window.innerWidth >= 769) {
+            startAutoScroll(); 
+            prevButton.style.display = 'none'; // Cacher les boutons sur les grands écrans
+            nextButton.style.display = 'none';
+        } else {
+            clearInterval(autoScrollInterval); // Arrêter le défilement automatique pour les petits écrans
+            prevButton.style.display = 'block'; // Afficher les boutons sur les petits écrans
+            nextButton.style.display = 'block';
+        }
+    };
+
+    // Appel de la fonction pour initialiser en fonction de la taille de l'écran
+    checkScreenSize();
+
+    // Redétecter la taille de l'écran lors de l'événement resize
+    window.addEventListener('resize', checkScreenSize);
+});
+
+
+    </script>
+
+</body>
+</html>
+
+

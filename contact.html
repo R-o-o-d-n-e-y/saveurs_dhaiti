@@ -1,0 +1,196 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .contact-container {
+            background: white;
+            width: 90%;
+            max-width: 800px;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .contact-info, .contact-form {
+            flex: 1;
+            min-width: 320px;
+            padding: 20px;
+        }
+
+        .contact-info {
+            background: #8b0000;
+            color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+
+        .contact-info button {
+            color: #8b0000;
+            text-decoration: none;
+        }
+
+
+        .contact-info h2 {
+            margin-bottom: 10px;
+        }
+
+        .contact-info div {
+            margin-bottom: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            transition: transform 0.3s ease-in-out;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .return-button {
+            background: white;
+            color: #8b0000;
+            padding: 10px 15px;
+            font-size: 14px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .return-button:hover {
+            background: #d21034;
+            color: white;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .contact-form input[type="submit"] {
+            background: #28a745;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .contact-form input[type="submit"]:hover {
+            background: #218838;
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                padding: 20px;
+            }
+
+            .contact-info, .contact-form {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            .contact-container {
+                padding: 15px;
+            }
+
+            .contact-info {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contactez-nous</h2>
+            <p>Nous sommes disponibles pour répondre à vos questions.</p>
+            <div>Saveurs d'Haïti</div>
+            <div>Tel : +509 46 71 64 09</div>
+            <div>Email : <a href="mailto:chouterood@gmail.com">chouterood@gmail.com</a></div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/ton-profil" class="fab fa-facebook-f" target="_blank"></a>
+                <a href="https://twitter.com/ton-profil" class="fab fa-twitter" target="_blank"></a>
+                <a href="https://www.instagram.com/ton-profil" class="fab fa-instagram" target="_blank"></a>
+            </div>
+            
+            <a href="index.html" class="return-button">Retour à l'Accueil</a>
+        </div>
+    
+        <div class="contact-form">
+            <form id="contactForm" method="POST" action="process_form.php">
+                <input type="text" name="name" id="name" placeholder="Votre nom" required>
+                <input type="email" name="email" id="email" placeholder="Votre email" required>
+                <textarea name="message" id="message" placeholder="Votre message" required></textarea>
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            var name = document.getElementById("name").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var message = document.getElementById("message").value.trim();
+    
+            if (!name || !email || !message) {
+                alert("Veuillez remplir tous les champs.");
+                event.preventDefault();
+            }
+        });
+    </script>
+    
+    </body>
+    </html>
+    

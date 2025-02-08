@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petit Déjeuner</title>
+    <link rel="stylesheet" href="petit-dejeuner.css">
+</head>
+<body>
+    <!-- Menu de navigation -->
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html" aria-label="Page d'accueil">
+                    <span class="red-text">Saveurs</span> <span class="blue-text">d'Haïti</span>
+                </a>
+            </div>
+            <nav class="nav-menu" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="formulaire.html">Inscription</a></li> 
+                <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <button class="action-button" id="openMenuButton" aria-label="Ouvrir le menu">☰</button>
+            </div>
+        </div>
+        <nav id="sideMenu" class="side-menu" aria-hidden="true">
+            <span class="close-btn" id="closeMenu" aria-label="Fermer le menu">&times;</span>
+            <div class="menu-content">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="formulaire.html">Inscription</a>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a>
+            </div>
+        </nav>
+    </header>
+
+ <!-- Bannière -->
+ <section class="banner">
+    <div class="banner-content">
+        <h1>Plats du Jour Haïtiens</h1>
+        <p>Découvrez nos plats typiques, préparés avec des ingrédients frais pour égayer chaque journée.</p>
+    </div>
+</section>
+
+<!-- Section des Items -->
+<section class="items-section">
+    <h2>Nos Petits Déjeuners Haïtiens</h2>
+    <div class="items-grid">
+        <!-- Carte 1 : Spaghettis -->
+        <div class="item-card">
+            <img src="images/Spaghettis.jpg" alt="Spaghettis" class="item-image">
+            <div class="item-info">
+                <h3>Spaghettis</h3>
+                <p>Spaghettis sautés avec des saucisses, parfaitement assaisonnés à la haïtienne.</p>
+                <button><a href="recettes.html#spaghettis">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 2 : Maïs et Avocat -->
+        <div class="item-card">
+            <img src="images/MayiZaboka.jpg" alt="Maïs et Avocat" class="item-image">
+            <div class="item-info">
+                <h3>Maïs et Avocat</h3>
+                <p>Semoule de maïs accompagnée de tranches d'avocat frais, une vraie délicatesse.</p>
+                <button><a href="recettes.html#mayi-ak-zaboka">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 3 : Bouillie d'Akasan -->
+        <div class="item-card">
+            <img src="images/LabouyiAkasan.jpg" alt="Bouillie d'Akasan" class="item-image">
+            <div class="item-info">
+                <h3>Bouillie d'Akasan</h3>
+                <p>Bouillie sucrée et épicée à base de farine de maïs, idéale pour démarrer la journée.</p>
+                <button><a href="recettes.html#labouyi-akasan">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 4 : Pain et Chocolat -->
+        <div class="item-card">
+            <img src="images/PainChokola.jpg" alt="Pain et Chocolat" class="item-image">
+            <div class="item-info">
+                <h3>Pain et Chocolat</h3>
+                <p>Pain frais accompagné d'un chocolat chaud crémeux, un classique du petit déjeuner.</p>
+                <button><a href="recettes.html#pain-ak-chokola">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 5 : Banane et Œufs -->
+        <div class="item-card">
+            <img src="images/BannannZe.jpg" alt="Banane et Œufs" class="item-image">
+            <div class="item-info">
+                <h3>Banane et Œufs</h3>
+                <p>Banane plantain bouillie, servie avec des œufs frits pour un petit déjeuner énergétique.</p>
+                <button><a href="recettes.html#bannann-ak-ze">Voir la recette</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Section Histoire -->
+<section class="history-section">
+    <h2>Un Voyage à Travers l'Histoire des Petits Déjeuners Haïtiens</h2>
+    <p>Le petit-déjeuner haïtien est une véritable immersion dans les saveurs locales, influencée par les traditions africaines, européennes et indigènes. Chaque plat porte en lui l'histoire d'une culture résiliente et inventive, capable de transformer des ingrédients simples en merveilles gustatives.</p>
+    
+    <ul>
+        <li>
+            <strong>Spaghettis Gourmands :</strong>  
+            Introduits en Haïti à l'époque de l'occupation américaine (1915-1934), les spaghettis sont rapidement devenus un plat populaire. Adaptés aux goûts locaux, ils sont cuisinés avec des saucisses, du hareng saur ou des épices locales. Leur présence au petit-déjeuner est unique à Haïti, où l'énergie qu'ils procurent est particulièrement appréciée.
+        </li>
+        
+        <li>
+            <strong>Maïs et Avocat :</strong>  
+            Héritage des traditions agricoles haïtiennes, la semoule de maïs (appelée "mayi moulen") est un aliment de base depuis des siècles. Associée à l’avocat frais, souvent récolté localement, cette combinaison offre un équilibre parfait entre glucides et graisses saines. Ce plat reflète l’importance de la simplicité dans la cuisine haïtienne.
+        </li>
+        
+        <li>
+            <strong>Bouillie d'Akasan :</strong>  
+            Cette bouillie douce à base de farine de maïs a des origines africaines, apportées par les esclaves pendant la période coloniale. Traditionnellement parfumée à la vanille, la cannelle et le lait, elle est servie chaude pour réchauffer les matins plus frais. Son nom "Akasan" viendrait d'une déformation linguistique créole.
+        </li>
+        
+        <li>
+            <strong>Pain Frais et Chocolat Chaud Maison :</strong>  
+            L'influence européenne se fait sentir dans ce classique du petit-déjeuner haïtien. Le cacao utilisé pour le chocolat chaud est cultivé localement dans des régions comme le Grand'Anse. Le chocolat haïtien est souvent épais et épicé avec de la cannelle et de la muscade, offrant une expérience riche et réconfortante.
+        </li>
+        
+        <li>
+            <strong>Banane Frite et Œufs :</strong>  
+            Les bananes frites (souvent des bananes plantains) sont omniprésentes dans la cuisine haïtienne, héritage africain également. Associées à des œufs pour un équilibre parfait entre douceur et protéines, ce plat illustre l'art haïtien de combiner des saveurs simples mais satisfaisantes.
+        </li>
+        
+        <li>
+            <strong>Pain et Café Noir :</strong>  
+            Le café haïtien, cultivé dans les montagnes de la région de Thiotte et du Massif de la Selle, est réputé pour sa richesse et sa douceur. Dès le 18e siècle, Haïti était l'un des plus grands producteurs mondiaux de café. Aujourd'hui encore, un bon café noir reste une tradition essentielle pour bien commencer la journée.
+        </li>
+    </ul>
+    
+    <h3>Pourquoi Choisir Nos Petits-Déjeuners ?</h3>
+    <p>Nos petits-déjeuners vous offrent une immersion dans l'histoire culinaire haïtienne, préparés avec des ingrédients frais et locaux. Chaque plat célèbre la diversité et la richesse culturelle d'Haïti, tout en répondant aux attentes des palais contemporains.</p>
+    <p>Que vous soyez à la recherche d'un repas nourrissant ou d'une expérience culinaire authentique, ces délices du matin sont là pour éveiller vos papilles et enrichir vos journées.</p>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const openMenuButton = document.getElementById('openMenuButton');
+        const sideMenu = document.getElementById('sideMenu');
+        const closeMenuButton = document.getElementById('closeMenu');
+
+        openMenuButton.addEventListener('click', () => {
+            sideMenu.style.height = '100vh';
+            sideMenu.setAttribute('aria-hidden', 'false');
+        });
+
+        closeMenuButton.addEventListener('click', () => {
+            sideMenu.style.height = '0';
+            sideMenu.setAttribute('aria-hidden', 'true');
+        });
+
+        // Fermeture via "Escape"
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && sideMenu.style.height === '100vh') {
+                sideMenu.style.height = '0';
+                sideMenu.setAttribute('aria-hidden', 'true');
+            }
+        });
+    });
+</script>
+</body>
+</html>

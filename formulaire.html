@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page de Connexion Moderne</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+
+<body>
+        <div class="container" id="container">
+        <!-- Formulaire d'inscription -->
+        <div class="form-container sign-up">
+            <form id="registerForm">
+                <h1>Créer un Compte</h1>
+                <label for="registerName">Nom Complet</label>
+                <input type="text" id="registerName" name="name" placeholder="Votre nom" required minlength="3">
+                <label for="registerEmail">Adresse Email</label>
+                <input type="email" id="registerEmail" name="email" placeholder="Votre email" required>
+                <label for="registerPassword">Mot de Passe</label>
+                <div class="password-wrapper">
+                    <input type="password" id="registerPassword" name="password" placeholder="Votre mot de passe" required minlength="6">
+                </div>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+
+        <!-- Formulaire de connexion -->
+        <div class="form-container sign-in">
+            <form id="loginForm">
+                <h1>Se Connecter</h1>
+                <label for="loginEmail">Adresse Email</label>
+                <input type="email" id="loginEmail" name="email" placeholder="Votre email" required>
+                <label for="loginPassword">Mot de Passe</label>
+                <div class="password-wrapper">
+                    <input type="password" id="loginPassword" name="password" placeholder="Votre mot de passe" required minlength="6">
+                </div>
+                <button type="submit">Se Connecter</button>
+            </form>
+            <!-- Message d'erreur -->
+            <div class="error-message">Mot de passe incorrect !</div>
+            <!-- Message de succès -->
+            <div class="success-message">Connexion réussie ! Redirection...</div>
+        </div>
+
+        <!-- Section de basculement -->
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Déjà membre ?</h1>
+                    <p>Entrez vos informations personnelles pour profiter pleinement du site.</p>
+                    <button id="login" class="toggle-btn">Connexion</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Nouveau ici ?</h1>
+                    <p>Inscrivez-vous pour accéder à toutes les fonctionnalités du site.</p>
+                    <button id="register" class="toggle-btn">Inscription</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+            const container = document.getElementById('container');
+            const registerBtn = document.getElementById('register');
+            const loginBtn = document.getElementById('login');
+            const registerForm = document.getElementById('registerForm');
+            const loginForm = document.getElementById('loginForm');
+            const successMessage = document.querySelector('.success-message');
+            const errorMessage = document.querySelector('.error-message');
+
+            // Fonction pour basculer entre les formulaires
+            function toggleForm() {
+                container.classList.toggle('active');
+            }
+
+            // Fonction pour gérer l'inscription
+            function handleRegister(e) {
+                e.preventDefault();
+                const name = document.getElementById('registerName').value;
+                const email = document.getElementById('registerEmail').value;
+                const password = document.getElementById('registerPassword').value;
+
+                // Validation simple avant envoi
+                if (name && email && password.length >= 6) {
+                    localStorage.setItem("userEmail", email);
+                    localStorage.setItem("userPassword", password);
+
+                    successMessage.style.display = 'block';
+
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 3000);
+                } else {
+                    errorMessage.textContent = "Veuillez remplir tous les champs correctement.";
+                    errorMessage.style.display = 'block';
+                }
+            }
+
+            // Fonction pour gérer la connexion
+            function handleLogin(e) {
+                e.preventDefault();
+                const email = document.getElementById('loginEmail').value;
+                const password = document.getElementById('loginPassword').value;
+
+                // Récupérer les informations de connexion de localStorage
+                const storedEmail = localStorage.getItem("userEmail");
+                const storedPassword = localStorage.getItem("userPassword");
+
+                if (email === storedEmail && password === storedPassword) {
+                    successMessage.style.display = 'block';
+                    setTimeout(() => {
+                        window.location.href = 'index.html';
+                    }, 2000);
+                } else {
+                    errorMessage.style.display = 'block';
+                }
+            }
+
+            // Ajouter les événements de basculement entre les formulaires
+            registerBtn.addEventListener('click', toggleForm);
+            loginBtn.addEventListener('click', toggleForm);
+
+            // Ajouter les événements de soumission des formulaires
+            registerForm.addEventListener('submit', handleRegister);
+            loginForm.addEventListener('submit', handleLogin);
+        });
+    </script>
+</body>
+
+</html>

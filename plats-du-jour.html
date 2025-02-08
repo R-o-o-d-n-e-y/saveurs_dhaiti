@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plats du jour</title>
+    <link rel="stylesheet" href="plats-du-jour.css">
+</head>
+<body>
+     <!-- Menu de navigation -->
+     <header>
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html" aria-label="Page d'accueil">
+                    <span class="red-text">Saveurs</span> <span class="blue-text">d'Haïti</span>
+                </a>
+            </div>
+            <nav class="nav-menu" aria-label="Menu principal">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="formulaire.html">Inscription</a></li> 
+                <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <button class="action-button" id="openMenuButton" aria-label="Ouvrir le menu">☰</button>
+            </div>
+        </div>
+        <nav id="sideMenu" class="side-menu" aria-hidden="true">
+            <span class="close-btn" id="closeMenu" aria-label="Fermer le menu">&times;</span>
+            <div class="menu-content">
+                <a href="index.html">Accueil</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <a href="formulaire.html">Inscription</a>
+                <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Recherche</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Bannière -->
+<section class="banner">
+    <div class="banner-content">
+        <h1>Plats du Jour Haïtiens</h1>
+        <p>Découvrez nos plats typiques, préparés avec des ingrédients frais pour égayer chaque journée.</p>
+    </div>
+</section>
+
+<section class="items-section">
+    <h2>Nos Plats du Jour Haïtiens</h2>
+    <div class="items-grid">
+        <!-- Carte 1 : Riz blanc, sauce pois, légumes -->
+        <div class="item-card">
+            <img src="images/diri-blan-sos-pwa-legim.jpg" alt="Riz blanc, sauce pois, légumes" class="item-image">
+            <div class="item-info">
+                <h3>Riz blanc, sauce pois, légumes</h3>
+                <p>Un plat classique et savoureux, parfait pour un repas équilibré.</p>
+                <button><a href="recettes.html#riz-blanc-sauce-pois-legumes">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 2 : Bouillon -->
+        <div class="item-card">
+            <img src="images/Bouillon.jpg" alt="Bouillon" class="item-image">
+            <div class="item-info">
+                <h3>Bouillon</h3>
+                <p>Un mélange riche de légumes et de viande, idéal pour se réchauffer.</p>
+                <button><a href="recettes.html#bouillon">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 3 : Maïs, avocat, sauce pois et viande -->
+        <div class="item-card">
+            <img src="images/Mayi-zaboka-Sòs-Pwa-Viande.jpg" alt="Maïs, avocat, sauce pois et viande" class="item-image">
+            <div class="item-info">
+                <h3>Maïs, avocat, sauce pois et viande</h3>
+                <p>Un combo créole frais et délicieux qui évoque les saveurs locales.</p>
+                <button><a href="recettes.html#mais-avocat-sauce-pois-viande">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 4 : Riz collé aux haricots -->
+        <div class="item-card">
+            <img src="images/diri-kole-ak-pwa.jpg" alt="Riz collé aux haricots" class="item-image">
+            <div class="item-info">
+                <h3>Riz collé aux haricots</h3>
+                <p>Un incontournable de la cuisine haïtienne, riche en goût et en texture.</p>
+                <button><a href="recettes.html#riz-cole-aux-haricots">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 5 : Soupe de giraumon -->
+        <div class="item-card">
+            <img src="images/Soupe-joumou.jpg" alt="Soupe de giraumon" class="item-image">
+            <div class="item-info">
+                <h3>Soupe de giraumon</h3>
+                <p>Symbole de liberté, cette soupe est un trésor national d’Haïti.</p>
+                <button><a href="recettes.html#soupe-joumou">Voir la recette</a></button>
+            </div>
+        </div>
+        <!-- Carte 6 : Riz, sauce pois congo et poulet -->
+        <div class="item-card">
+            <img src="images/diri-sos-pwa-kongo-ak-sos-poul.jpg" alt="Riz, sauce pois congo et poulet" class="item-image">
+            <div class="item-info">
+                <h3>Riz, sauce pois congo et poulet</h3>
+                <p>Un mariage parfait de riz, de pois congo et de sauce au poulet.</p>
+                <button><a href="recettes.html#riz-sauce-pois-congo-poulet">Voir la recette</a></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <!-- Section Histoire -->
+<section class="history-section">
+    <h2>Un Voyage à Travers l'Histoire de nos Plats du Jour</h2>
+    <p>Les plats du jour que nous proposons sont une célébration de la cuisine haïtienne, reflet d'une histoire riche et métissée. Chaque plat porte en lui les traditions, les saveurs locales et l'influence des différentes cultures ayant façonné Haïti.</p>
+
+    <ul>
+        <li>
+            <strong>Riz Collé aux Haricots :</strong>  
+            Ce plat emblématique tire ses origines de l'époque coloniale, où les esclaves utilisaient le riz et les haricots, ingrédients peu coûteux et nourrissants, comme base de leur alimentation. Aujourd'hui, il est souvent parfumé avec du thym, de l'ail et du lait de coco, symbolisant l'ingéniosité culinaire haïtienne.
+        </li>
+
+        <li>
+            <strong>Soupe de Giraumon :</strong>  
+            Plat symbolique de la fête de l'indépendance (1er janvier), la soupe de giraumon est un héritage direct de la libération des esclaves en 1804. Jadis interdite aux esclaves, elle est devenue un symbole de liberté et de prospérité. Préparée avec de la courge, des légumes, de la viande et des épices, elle réchauffe le cœur et l'âme.
+        </li>
+
+        <li>
+            <strong>Riz Sauce Pois Congo et Poulet :</strong>  
+            Les pois Congo, introduits en Haïti par les colons espagnols, sont riches en protéines et très appréciés pour leur goût distinctif. Associés au riz et au poulet, ce plat est devenu un incontournable des repas familiaux et des fêtes.
+        </li>
+
+        <li>
+            <strong>Riz Blanc Sauce Légumes :</strong>  
+            Ce plat est né de la créativité des cuisinières haïtiennes, qui savaient tirer parti des légumes locaux pour créer une sauce savoureuse et nutritive. La sauce légumes varie selon les saisons, intégrant des carottes, des épinards, du chou et des épices locales.
+        </li>
+
+        <li>
+            <strong>Bouillon :</strong>  
+            Le bouillon haïtien remonte à une tradition paysanne, où les familles utilisaient les légumes et la viande disponibles pour concocter une soupe riche et nourrissante. Consommé lors des grandes occasions ou pendant les périodes de convalescence, il est réputé pour ses propriétés fortifiantes.
+        </li>
+
+        <li>
+            <strong>Maïs, Avocat, Sauce Pois et Viande :</strong>  
+            Ce plat est une combinaison inventive des aliments de base haïtiens : le maïs, symbole de l'agriculture locale, l'avocat frais, souvent récolté dans les jardins familiaux, et la sauce pois riche en protéines. Ce mélange offre une palette de textures et de saveurs équilibrées.
+        </li>
+    </ul>
+
+    <h3>Pourquoi Choisir Nos Plats ?</h3>
+    <p>Préparés avec des ingrédients frais et locaux, nos plats du jour respectent les traditions culinaires haïtiennes tout en apportant une touche contemporaine. Ils incarnent l'hospitalité et la générosité de la culture haïtienne, vous offrant une expérience authentique et savoureuse.</p>
+</section>
+
+
+
+    <!-- Scripts -->
+    <script>
+        // Ouvrir et fermer le menu latéral
+        document.getElementById("openMenuButton").addEventListener("click", function() {
+            document.getElementById("sideMenu").style.height = "100%";
+            document.getElementById("sideMenu").setAttribute("aria-hidden", "false");
+        });
+
+        document.getElementById("closeMenu").addEventListener("click", function() {
+            document.getElementById("sideMenu").style.height = "0";
+            document.getElementById("sideMenu").setAttribute("aria-hidden", "true");
+        });
+    </script>
+</body>
+</html>

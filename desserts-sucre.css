@@ -1,0 +1,361 @@
+/* --------------------------------
+   Header
+---------------------------------- */
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 1rem;
+}
+
+/* Général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logo a .red-text {
+    color: #d21034;
+}
+
+.logo a .blue-text {
+    color: #0026ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 0 15px;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-menu ul li a:hover {
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+    transition: 1s;
+}
+
+/* Bouton burger */
+.buttons {
+    display: none;
+}
+
+.buttons .action-button {
+    font-size: 1.5rem;
+    color: white;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Menu latéral déroulant */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.95);
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: height 0.5s ease-in-out;
+    z-index: 1000;
+    color: white;
+}
+
+
+/* Contenu centré */
+.side-menu .menu-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Affichage progressif */
+.side-menu.open {
+    height: 100%;
+}
+
+.side-menu.open .menu-content {
+    opacity: 1;
+}
+
+/* Liens stylisés */
+.side-menu .menu-content a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.side-menu .menu-content a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Bouton de fermeture */
+.side-menu .close-btn {
+    font-size: 2.5rem;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.side-menu .close-btn:hover {
+    transform: rotate(90deg);
+}
+
+
+/* Bannière */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('images/banner-desserts-sucre.jpg') no-repeat center center/cover;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+    position: relative;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 1.2em;
+}
+
+/* Variables pour les couleurs */
+:root {
+    --primary-color: #ff5722;
+    --primary-hover: #e64a19;
+    --text-color: #333;
+    --text-secondary: #666;
+    --bg-light: #f4f4f4;
+    --white: #fff;
+}
+
+
+/* Section des items */
+.items-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: var(--bg-light);
+}
+
+.items-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+}
+
+/* Grille des items */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* Carte des items */
+.item-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 100%;
+    max-width: 350px; /* Limite la taille pour garder une bonne mise en page */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto; /* Centrer les cartes */
+}
+
+.item-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Image des cartes */
+.item-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Effet zoom sur l’image */
+.item-card:hover .item-image {
+    transform: scale(1.1);
+}
+
+/* Informations des items */
+.item-info {
+    padding: 20px;
+    background-color: var(--white);
+    text-align: center;
+}
+
+.item-info h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+.item-info p {
+    font-size: 1em;
+    color: var(--text-secondary);
+    margin: 10px 0;
+}
+
+/* Bouton stylisé */
+.item-info button {
+    padding: 12px 25px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.item-info button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.item-info button:hover {
+    background-color: var(--primary-hover);
+    transform: scale(1.05);
+}
+
+.item-info button:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 3px;
+}
+
+
+/* Histoire */
+.history-section {
+    padding: 50px 20px;
+    background-color: #fff9f1;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.history-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #d21034;
+}
+
+.history-section h3 {
+    font-size: 1.8em;
+    margin-top: 30px;
+    color: #d21034;
+}
+
+.history-section p {
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.history-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history-section ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #555;
+}
+
+.history-section ul li strong {
+    color: #d21034;
+}
+
+/* --------------------------------
+   Animations
+---------------------------------- */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .buttons {
+        display: block;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-menu {
+        display: flex;
+    }
+
+    .buttons {
+        display: none;
+    }
+}
+@media (max-width: 576px) {
+    .suggestions-grid, .items-grid {
+        grid-template-columns: 1fr;
+    }
+}
